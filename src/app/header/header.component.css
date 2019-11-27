@@ -1,0 +1,36 @@
+.main-class { 
+   font-weight: 700;
+   font-size: 20px; 
+   padding-top: 25px;
+   color: white;
+}
+
+.barra-pesquisa {
+    /* margin-top: 10px; */
+    margin-right: 40px;
+    position: relative;
+    /* bottom: 10px; */
+}
+
+.barra{
+    width: 400px;
+    /* right: 100px; */
+    /* border-radius: 20%; */
+
+}
+
+.button-search{
+    height: 38px;
+    font-size: 12px;
+}
+
+/* ul{
+    /* display:inline-block;
+    list-style-type:none; 
+} */
+
+/* li {
+   cursor: pointer;
+   display: inline; 
+   margin-right: 15px;    
+} */
