@@ -1,0 +1,40 @@
+
+<div class="sign-up">
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: joaosilva@mail.com">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Senha</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Nome e Sobrenome</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Pedro Silva">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Endereço</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento, casa, flat">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Cidade</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">Estado</label>
+        <select id="inputState" class="form-control">
+          <option selected *ngFor="let date of state">{{ date?.state }}</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Cep</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+</div>
