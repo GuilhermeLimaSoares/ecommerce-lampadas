@@ -1,0 +1,28 @@
+.area-product{
+    /* width: 256px; */
+    width: 286px;
+    height: 392px;
+    border: 1px solid #d6cece;
+    padding: 20px
+}
+
+.title{
+    margin: 7px;
+}
+
+.title-1{
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: "Hind Madurai", sans-serif;
+
+}
+
+.title-2{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+img{
+    border: 1px solid red;
+    width: 98%;
+}
