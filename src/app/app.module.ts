@@ -12,6 +12,7 @@ import { IconButtonsComponent } from './header/icon-buttons/icon-buttons.compone
 import { ButtonLoginComponent } from './header/icon-buttons/button-login/button-login.component';
 import { SingUpComponent } from './header/icon-buttons/button-login/sing-up/sing-up.component';
 import { ViewProductComponent } from './main-area/view-product/view-product.component';
+import { ButtonUserComponent } from './header/icon-buttons/button-user/button-user.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ViewProductComponent } from './main-area/view-product/view-product.comp
     IconButtonsComponent,
     ButtonLoginComponent,
     SingUpComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    ButtonUserComponent
   ],
   imports: [
     BrowserModule,
