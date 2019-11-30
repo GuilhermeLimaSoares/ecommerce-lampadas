@@ -13,6 +13,10 @@ import { ButtonLoginComponent } from './header/icon-buttons/button-login/button-
 import { SingUpComponent } from './header/icon-buttons/button-login/sing-up/sing-up.component';
 import { ViewProductComponent } from './main-area/view-product/view-product.component';
 import { ButtonUserComponent } from './header/icon-buttons/button-user/button-user.component';
+import { MyAccountComponent } from './header/icon-buttons/button-user/my-account/my-account.component';
+import { OrdersComponent } from './header/icon-buttons/button-user/my-account/orders/orders.component';
+import { CardsComponent } from './header/icon-buttons/button-user/my-account/cards/cards.component';
+import { HomeComponent } from './main-area/home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { ButtonUserComponent } from './header/icon-buttons/button-user/button-us
     ButtonLoginComponent,
     SingUpComponent,
     ViewProductComponent,
-    ButtonUserComponent
+    ButtonUserComponent,
+    MyAccountComponent,
+    OrdersComponent,
+    CardsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

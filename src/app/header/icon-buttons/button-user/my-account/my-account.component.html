@@ -1,0 +1,35 @@
+<h1>Minha conta</h1>
+
+<!-- <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Cadastro</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Pedidos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Cartões</a>
+  </ul> -->
+
+  <div class="row">
+    <div class="col-3 menu">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" selected>Cadastro</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Pedidos</a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Cartões</a>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <app-sing-up></app-sing-up>
+        </div>    
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <app-orders></app-orders>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            <app-cards></app-cards>
+        </div>
+      </div>
+    </div>
+  </div>

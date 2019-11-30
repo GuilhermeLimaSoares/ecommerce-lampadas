@@ -1,9 +1,14 @@
 .area-product{
     /* width: 256px; */
-    width: 286px;
+    /* width: 286px;
     height: 392px;
     border: 1px solid #d6cece;
-    padding: 20px
+    padding: 20px */
+
+    width: 255px;
+    height: 360px;
+    border: 1px solid #d6cece;
+    padding: 17px;
 }
 
 .title{
