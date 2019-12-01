@@ -463,6 +463,18 @@
       "state": "São Paulo",
       "zipCode": "048229007",
       "photo":""
+    },
+    {
+      "email": "guilhermelimasoares@gmail.com",
+      "password": "12345678",
+      "fullName:": "Guilherme de Lima Soares",
+      "btBirth": "029/12/1997",
+      "gender": "male",
+      "fullAddress": "Rua Imbu natzl",
+      "city": "São Paulo",
+      "state": "São Paulo",
+      "zipCode": "04833905",
+      "photo":""
     }
   ]
 }

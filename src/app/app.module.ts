@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 // import { AppRoutingModule } from './app-routing.module';
+import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
+import { AuthenticationService } from '../services/authentication.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainAreaComponent } from './main-area/main-area.component';
@@ -37,10 +40,12 @@ import { HomeComponent } from './main-area/home/home.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     routing,
+    HttpModule,
     // AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
