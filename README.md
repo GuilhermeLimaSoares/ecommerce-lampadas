@@ -25,3 +25,39 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+# ZSL- Angular App Starter
+
+## 1. Passos para começar
+
+### Instalando as Dependências
+
+`npm install`
+
+### Inicializando o Servidor
+
+`ng serve` ou `npm start`
+
+## 2. Iniciando o Backend
+
+### Instalando o json-server
+
+`npm install -g json-server`
+
+### Iniciando o serviço (raiz da aplicação)
+
+`json-server db.json`
+
+## Goodies
+
+Expressões regulares usadas na validação de formulários
+
+### Email Regex
+
+`/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i`
+
+### Number Regex
+
+`/^[0-9]*$/`
