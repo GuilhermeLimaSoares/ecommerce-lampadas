@@ -455,7 +455,7 @@
     {
       "email": "kain@gmail.com",
       "password": "12345678",
-      "fullName:": "Kain da Silva Xavier",
+      "fullName": "Kain da Silva Xavier",
       "btBirth": "09/12/1995",
       "gender": "female",
       "fullAddress": "Rua Ausguta 666",
@@ -467,7 +467,7 @@
     {
       "email": "guilhermelimasoares@gmail.com",
       "password": "12345678",
-      "fullName:": "Guilherme de Lima Soares",
+      "fullName": "Guilherme de Lima Soares",
       "btBirth": "029/12/1997",
       "gender": "male",
       "fullAddress": "Rua Imbu natzl",

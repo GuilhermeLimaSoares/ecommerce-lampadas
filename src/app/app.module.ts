@@ -6,7 +6,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
+import { FirstNamePipe } from '../pipes/first-name.pipe';
 import { AuthenticationService } from '../services/authentication.service';
+import { UserService } from '../services/user.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainAreaComponent } from './main-area/main-area.component';
@@ -36,7 +38,8 @@ import { HomeComponent } from './main-area/home/home.component';
     MyAccountComponent,
     OrdersComponent,
     CardsComponent,
-    HomeComponent
+    HomeComponent,
+    FirstNamePipe,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import { HomeComponent } from './main-area/home/home.component';
     HttpModule,
     // AppRoutingModule
   ],
-  providers: [AuthenticationService],
-  bootstrap: [AppComponent]
+  providers: [AuthenticationService, UserService],
+  bootstrap: [AppComponent],
+  // exports: [FirstNamePipe],
 })
 export class AppModule { }

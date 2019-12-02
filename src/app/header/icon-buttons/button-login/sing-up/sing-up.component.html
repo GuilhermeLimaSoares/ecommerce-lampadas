@@ -1,65 +1,112 @@
 
 <h1>Cadastro</h1>
-<div class="sign-up">
-<form>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: joaosilva@mail.com">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPassword4">Senha</label>
-        <input type="password" class="form-control" id="inputPassword4">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputAddress">Nome e Sobrenome</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Pedro Silva">
-    </div>
-
-     <div class="form-group dt-birthday">
-        <label for="inputDtBirthday">Data de Nascimento</label>
-            <input type="text" class="form-control col-auto dt-format" id="inputDtBirthday" placeholder="01/01/2019">   
+<div *ngIf="user === undefined">
+  <div class="sign-up">
+  <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: joaosilva@mail.com">
         </div>
-  
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Nome e Sobrenome</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Pedro Silva">
+      </div>
 
-    <form class="form-group">
-      <label for="inputAddress">Sexo</label><br>
-      <input type="radio" name="gender" value="male" checked> Masculino<br>
-      <input type="radio" name="gender" value="female"> Feminino<br>
-      <input type="radio" name="gender" value="other"> Outros
+      <div class="form-group dt-birthday">
+          <label for="inputDtBirthday">Data de Nascimento</label>
+              <input type="text" class="form-control col-auto dt-format" id="inputDtBirthday" placeholder="01/01/2019">   
+          </div>
+    
+
+      <form class="form-group">
+        <label for="inputAddress">Sexo</label><br>
+        <input type="radio" name="gender" value="male" checked> Masculino<br>
+        <input type="radio" name="gender" value="female"> Feminino<br>
+        <input type="radio" name="gender" value="other"> Outros
+      </form>
+
+      <div class="form-group">
+        <label for="inputAddress2">Endereço</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento, casa, flat">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Cidade</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Estado</label>
+          <select id="inputState" class="form-control">
+            <option selected *ngFor="let date of state">{{ date?.state }}</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Cep</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Criar cadastro</button>
     </form>
-
-    <!-- <div class="input-group mb-3">
-      <div class="input-group-prepend">
-          <form class="form-group">
-          <input type="checkbox" aria-label="Checkbox for following text input" name="gender" value="male" checked> Male<br>
-          <input type="checkbox" aria-label="Checkbox for following text input" name="gender" value="female"> Female<br>
-          <input type="checkbox" aria-label="Checkbox for following text input" name="gender" value="other"> Other
-        </form>
+  </div>
+</div>
+<div *ngIf="user">
+  <div class="sign-up">
+  <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="{{user?.email}}">
         </div>
-    </div> -->
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="{{user?.password}}">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Nome e Sobrenome</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="{{user?.fullName}}">
+      </div>
 
-    <div class="form-group">
-      <label for="inputAddress2">Endereço</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartmento, casa, flat">
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">Cidade</label>
-        <input type="text" class="form-control" id="inputCity">
+      <div class="form-group dt-birthday">
+          <label for="inputDtBirthday">Data de Nascimento</label>
+              <input type="text" class="form-control col-auto dt-format" id="inputDtBirthday" placeholder="{{user?.btBirth}}">   
+          </div>
+    
+
+      <form class="form-group">
+        <label for="inputAddress">Sexo</label><br>
+        <input type="radio" name="gender" value="male" checked> Masculino<br>
+        <input type="radio" name="gender" value="female"> Feminino<br>
+        <input type="radio" name="gender" value="other"> Outros
+      </form>
+
+      <div class="form-group">
+        <label for="inputAddress2">Endereço</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="{{user?.fullAddress}}">
       </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">Estado</label>
-        <select id="inputState" class="form-control">
-          <option selected *ngFor="let date of state">{{ date?.state }}</option>
-        </select>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Cidade</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="{{user?.city}}">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Estado</label>
+          <select id="inputState" class="form-control">
+            <option selected *ngFor="let date of state">{{ user?.state}}</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Cep</label>
+          <input type="text" class="form-control" id="inputZip" placeholder="{{user?.zipCode}}">
+        </div>
       </div>
-      <div class="form-group col-md-2">
-        <label for="inputZip">Cep</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Criar cadastro</button>
-  </form>
+      <button type="submit" class="btn btn-primary">Criar cadastro</button>
+    </form>
+  </div>
 </div>

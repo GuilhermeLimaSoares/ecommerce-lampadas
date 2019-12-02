@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { UserService } from '../../../../../services/user.service';
 @Component({
   selector: 'app-sing-up',
   templateUrl: './sing-up.component.html',
   styleUrls: ['./sing-up.component.css']
 })
 export class SingUpComponent implements OnInit {
+@Input() user;
 public state = [
   { state: 'Acre'},
   { state: 'Alagoas'},
@@ -37,9 +38,19 @@ public state = [
   { state: 'Selecione'},
 ];
 
-  constructor() { }
+  constructor(private readonly userService: UserService) { }
 
   ngOnInit() {
+    // this.getUser();
   }
+
+  // public getUser() {
+  //   this.userService.availableUser.subscribe((res) => {
+  //     this.user = res;
+  //     console.log('usuario');
+  //     console.log(this.user);
+  //    });
+
+  // }
 
 }

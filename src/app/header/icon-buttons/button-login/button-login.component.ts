@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { of } from 'rxjs';
+import { of, forkJoin } from 'rxjs';
 import { Observable } from'rxjs/Observable';
 import { FormsModule } from '@angular/forms';
 import { AuthenticationService } from '../../../../services/authentication.service';
+import { UserService } from '../../../../services/user.service';
 import { FUllUser, User } from 'src/models/user.model';
 import { viewClassName } from '@angular/compiler';
 
@@ -13,64 +14,26 @@ import { viewClassName } from '@angular/compiler';
 })
 export class ButtonLoginComponent implements OnInit {
 
-  // public validation = of({
-  //   email: '',
-  //   password: ''
-  // });
-
   public validation = {
     email: '',
     password: ''
   };
-
-  public authentication: FUllUser = {
-        email: '',
-        password: '',
-        fullName: '',
-        btBirth: '',
-        gender: '',
-        fullAddress: '',
-        city: '',
-        state: '',
-        zipCode: '',
-        photo: ''
-  };
-
+  authentication: FUllUser;
 
   constructor(
-    private readonly authenticationService: AuthenticationService
+    private readonly authenticationService: AuthenticationService,
+    private readonly userService: UserService
     ) { }
 
   ngOnInit() {
-
-    // this.authenticationService
-    // .getUsers().subscribe((res) => {
-    //     res.map((result) => {
-    //       console.log(result);
-    //     });
-    // });
-
-    // if (this.validation.email !== '') {
-    //   console.log(of(this.validation.email));
-    // }
-    // console.log('email', of(this.validation.email));
-    // const ouvinte = of(this.validation.email);
-
-    // ouvinte.subscribe((res) => {
-    //   console.log(res);
-    // });
 
   }
 
   public validationInform() {
     if (this.validation.email.length > 0) {
       this.getUsers();
-      // console.log(of(this.validation.email));
-      // if (obj === this.validation) {
-      //   console.log('valores iguais');
-      // }
     }
-  };
+  }
 
   public getUsers() {
 
@@ -82,39 +45,6 @@ export class ButtonLoginComponent implements OnInit {
             email: result.email,
             password: result.password,
           };
-          // if (obj === this.validation) {
-          //   console.log('valores iguais');
-          // }
-          // console.log(result);
-          // Object.keys(obj[result] === this.validation.email) {
-          //   console.log('valores iguais');
-          // }
-
-          // Object.keys(obj)
-          // .map((res) =>{
-          //   console.log(res);
-          //   console.log('valores iguais');
-
-
-          // });
-          // const validator = [];
-          // Object.keys(obj)
-          // .every((res) => {
-          //   validator.push(obj[res] === this.validation[res]);
-          //   console.log(validator);
-          //   // console.log(obj[res] == this.validation[res]);
-          //   // return obj[res] ===  this.validation[res];
-          //   // console.log(res);
-          //   // console.log('valores iguais');
-
-          //   // if (obj[res] === this.validation[res]) {
-          //     // validator.push({res});
-          //     // console.log(validator);
-          //     // return validator.push(true);
-          //   // }
-
-          //   return validator.length === 2;
-          // });
 
           const validator = Object.keys(obj)
           .every((res) => {
@@ -127,14 +57,10 @@ export class ButtonLoginComponent implements OnInit {
             this.authentication = result;
             console.log('autenticação');
             console.log(this.authentication);
+            // this.userService.exposeUser(this.authentication);
+            this.userService.exposeUser(result);
           }
 
-          // switch (validator){
-          //   case true:
-          //     return this.authentication = result;
-          //   case false:
-          //     return console.log('error');
-          // }
         });
     });
   }
