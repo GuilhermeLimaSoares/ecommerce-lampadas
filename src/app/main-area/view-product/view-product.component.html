@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="products === undefined">
     <div class="area-product">
         <img src="../../../assets/zsl.jpg">
         <div class="title title-1">
@@ -20,3 +20,54 @@
         </div>
     </div>
 </div>
+<!-- 
+<div *ngIf="products">
+        <div class="area-product" *ngFor="let obj of products">
+            <img src="{{obj?.imagePath}}">
+            <div class="title title-1">
+                <span>
+                    {{obj?.description }}
+                </span>
+            </div>
+    
+            <div class="title title-2">
+                <span>
+                    {{obj?.price}}
+                </span>
+            </div>
+    
+            <div class="title">
+                <span>
+                    10x de R$ 225,89 sem juros
+                </span>
+            </div>
+        </div>
+    </div> -->
+
+<div class='carrousel' *ngIf="products">
+    <ul>
+        <li *ngFor="let obj of products">
+            <div class="area-product">
+                <img src="{{obj?.imagePath}}">
+                <div class="title title-1">
+                    <span>
+                        {{obj?.description }}
+                    </span>
+                </div>
+        
+                <div class="title title-2">
+                    <span>
+                        {{obj?.price}}
+                    </span>
+                </div>
+        
+                <div class="title">
+                    <span>
+                        10x de R$ 225,89 sem juros
+                    </span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div> 
+        

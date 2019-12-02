@@ -1,5 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import {CatalogComponent} from '../app/main-area/catalog/catalog.component';
 import {MainAreaComponent} from '../app/main-area/main-area.component';
 import { CardsComponent } from './header/icon-buttons/button-user/my-account/cards/cards.component';
 import { MyAccountComponent } from './header/icon-buttons/button-user/my-account/my-account.component';
@@ -13,6 +14,7 @@ const APP_ROUTES: Routes = [
   // {path: '', component: MainAreaComponent},
   {path: 'home', component: HomeComponent},
   {path: 'cadastro', component: SingUpComponent},
+  {path: 'catalogo', component: CatalogComponent},
   // {path: 'cartoes', component: CardsComponent},
   {path: 'minhaconta', component: MyAccountComponent},
   // {path: 'pedidos', component: OrdersComponent},

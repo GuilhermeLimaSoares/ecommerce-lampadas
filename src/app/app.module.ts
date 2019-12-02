@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { FirstNamePipe } from '../pipes/first-name.pipe';
 import { AuthenticationService } from '../services/authentication.service';
 import { UserService } from '../services/user.service';
+import { ProductsService } from '../services/products.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainAreaComponent } from './main-area/main-area.component';
@@ -22,6 +23,7 @@ import { MyAccountComponent } from './header/icon-buttons/button-user/my-account
 import { OrdersComponent } from './header/icon-buttons/button-user/my-account/orders/orders.component';
 import { CardsComponent } from './header/icon-buttons/button-user/my-account/cards/cards.component';
 import { HomeComponent } from './main-area/home/home.component';
+import { CatalogComponent } from './main-area/catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { HomeComponent } from './main-area/home/home.component';
     CardsComponent,
     HomeComponent,
     FirstNamePipe,
+    CatalogComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,7 @@ import { HomeComponent } from './main-area/home/home.component';
     HttpModule,
     // AppRoutingModule
   ],
-  providers: [AuthenticationService, UserService],
+  providers: [AuthenticationService, ProductsService, UserService],
   bootstrap: [AppComponent],
   // exports: [FirstNamePipe],
 })

@@ -476,5 +476,35 @@
       "zipCode": "04833905",
       "photo":""
     }
+  ],
+  "products":[
+    {
+      "imagePath": "assets/lampadas-led/led01.png",
+      "name": "Lâmpada LED Bulbo Luz Amarela 9W Lexman Bivolt",
+      "description": "A lâmpada LED economiza até 90% de energia elétrica quando comparada às lâmpadas incandescentes. É um produto sustentável que pode ser reciclado, pois não possui mercúrio. ",
+      "price": 11.9,
+      "category": "lampada-led"
+    },
+    {
+      "imagePath": "assets/lampadas-led/led02.png",
+      "name": "Lâmpada LED Vela Luz Branca 4W Lexman Bivolt",
+      "description": "",
+      "price": 9.9,
+      "category": "lampada-led"
+    },
+    {
+      "imagePath": "assets/lampadas-led/led03.png",
+      "name": "Lâmpada LED 3D Pêra 4W Lexman Bivolt",
+      "description": "A lâmpada LED economiza até 90% de energia elétrica quando comparada às lâmpadas incandescentes.",
+      "price": 59.90,
+      "category": "lampada-led"
+    },
+    {
+      "imagePath": "assets/lampadas-led/led04.png",
+      "name": "Lâmpada LED Bulbo Luz Amarela 5W Lexman Bivolt",
+      "description": "A lâmpada LED economiza até 90% de energia elétrica quando comparada às lâmpadas incandescentes. É um produto sustentável que pode ser reciclado, pois não possui mercúrio. ",
+      "price": 11.9,
+      "category": "lampada-led"
+    }
   ]
 }

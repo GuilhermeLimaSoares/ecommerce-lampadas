@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  public productsArray = [];
+  public filterProducts = [];
+  constructor(private readonly productsService: ProductsService) { }
 
   ngOnInit() {
+    this.getProducts();
+  }
+
+  // public getCategory(products, product){
+  //   this.productsService.getCategory(products, product).subscribe((result) => {
+  //     console.log('filtro cmomponente');
+  //     // console.log(result);
+  //     this.filterProducts = this.filterProducts.concat(result);
+  //     console.log(this.filterProducts);
+  //   });
+  // }
+
+  public getCategory(product){
+    this.filterProducts = this.productsArray.filter((result) => result.category === product);
+    console.log('array filtrado');
+    console.log(this.filterProducts);
+    this.productsService.showProducts(this.filterProducts);
+  }
+
+  public getProducts() {
+    this.productsService.getProducts().subscribe((result) => {
+      console.log('todos o productos');
+      console.log(result);
+      this.productsArray = this.productsArray.concat(result);
+    });
   }
 
 }
