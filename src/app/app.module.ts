@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { FirstNamePipe } from '../pipes/first-name.pipe';
+import { SmallDescPipe } from '../pipes/small-desc.pipe';
 import { AuthenticationService } from '../services/authentication.service';
 import { UserService } from '../services/user.service';
 import { ProductsService } from '../services/products.service';
@@ -42,6 +43,7 @@ import { CatalogComponent } from './main-area/catalog/catalog.component';
     CardsComponent,
     HomeComponent,
     FirstNamePipe,
+    SmallDescPipe,
     CatalogComponent,
   ],
   imports: [

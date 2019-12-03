@@ -505,6 +505,118 @@
       "description": "A lâmpada LED economiza até 90% de energia elétrica quando comparada às lâmpadas incandescentes. É um produto sustentável que pode ser reciclado, pois não possui mercúrio. ",
       "price": 11.9,
       "category": "lampada-led"
+    },
+    {
+      "imagePath": "assets/lampadas-led/flo01.png",
+      "name": "Lâmpada Fluorescente 3U Luz Branca 15W Lexman 127V (110V)",
+      "description": "A lâmpada Fluorescente economiza até 80% de energia elétrica quando comparada às lâmpadas incandescentes.",
+      "price": 8.9,
+      "category": "lampada-flo"
+    },
+    {
+      "imagePath": "assets/lampadas-led/flo02.png",
+      "name": "Lâmpada Fluorescente Espiral Luz Amarela 25W Lexman 127V (110V)",
+      "description": "A lâmpada Fluorescente economiza até 80% de energia elétrica quando comparada às lâmpadas incandescentes.",
+      "price": 11.9,
+      "category": "lampada-flo"
+    },
+    {
+      "imagePath": "assets/lampadas-led/flo03.png",
+      "name": "Lâmpada Fluorescente Tubular Luz Branca 20W Osram",
+      "description": "A lâmpada Fluorescente economiza até 80% de energia elétrica quando comparada às lâmpadas incandescentes. ",
+      "price": 14.79,
+      "category": "lampada-flo"
+    },
+    {
+      "imagePath": "assets/lampadas-led/flo04.png",
+      "name": "Lâmpada Fluorescente Anti-Inseto 3U Luz Amarela 20W Ourolux 127V (110V)",
+      "description": "A lâmpada Fluorescente economiza até 80% de energia elétrica quando comparada às lâmpadas incandescentes.",
+      "price": 42.90,
+      "category": "lampada-flo"
+    },
+    {
+      "imagePath": "assets/lampadas-led/tub02.png",
+      "name": "Lâmpada LED Tubular Luz Branca 18W Lexman Bivolt",
+      "description": "A lâmpada LED economiza até 90% de energia elétrica quando comparada às lâmpadas incandescentes. É um produto sustentável que pode ser reciclado, pois não possui mercúrio. ",
+      "price": 39.90,
+      "category": "lampada-tub"
+    },
+    {
+      "imagePath": "assets/lampadas-led/tub01.png",
+      "name": "Lâmpada LED Tubular Luz Amarela 18W Lexman Bivolt",
+      "description": "A lâmpada LED economiza até 90% de energia elétrica quando comparada às lâmpadas incandescentes. É um produto sustentável que pode ser reciclado, pois não possui mercúrio. ",
+      "price": 39.90,
+      "category": "lampada-tub"
+    },
+    {
+      "imagePath": "assets/lampadas-led/tub03.png",
+      "name": "Lâmpada Fluorescente Tubular Luz Amarela 14W Osram",
+      "description": "A lâmpada Fluorescente economiza até 80% de energia elétrica quando comparada às lâmpadas incandescentes. ",
+      "price": 19.69,
+      "category": "lampada-tub"
+    },
+    {
+      "imagePath": "assets/lampadas-led/tub04.png",
+      "name": "Lâmpada LED Tubular Luz Branca 18W Kian Bivolt",
+      "description": "A lâmpada LED economiza até 90% de energia elétrica quando comparada às lâmpadas incandescentes. É um produto sustentável que pode ser reciclado, pois não possui mercúrio. ",
+      "price": 32.90,
+      "category": "lampada-tub"
+    },
+    {
+      "imagePath": "assets/lampadas-led/fil01.png",
+      "name": "Lâmpada LED 3D Pêra 4W Lexman Bivolt",
+      "description": "A lâmpada LED economiza até 90% de energia elétrica quando comparada às lâmpadas incandescentes",
+      "price": 56.90,
+      "category": "lampada-fil"
+    },
+    {
+      "imagePath": "assets/lampadas-led/fil02.png",
+      "name": "Lâmpada Incandescente de Filamento Pêra Luz Amarela 40W Lexman 220V",
+      "description": "Esta lâmpada, além de iluminar, decora o ambiente. Possui estilo retrô e é ideal para usar em lustres, pendentes e plafons decorativos.",
+      "price": 29.90,
+      "category": "lampada-fil"
+    },
+    {
+      "imagePath": "assets/lampadas-led/fil03.png",
+      "name": "Lâmpada Incandescente de Filamento Globo Luz Amarela 40W Lexman 127V (110V)",
+      "description": "Esta lâmpada, além de iluminar, decora o ambiente. Possui estilo retrô e é ideal para usar em lustres, pendentes e plafons decorativos.",
+      "price": 39.90,
+      "category": "lampada-fil"
+    },
+    {
+      "imagePath": "assets/lampadas-led/fil04.png",
+      "name": "Lâmpada LED de Filamento Globo Luz Amarela 8W Ouro Xanlite Bivolt",
+      "description": "Esta lâmpada, além de iluminar, decora o ambiente. Possui estilo retrô e é ideal para usar em lustres, pendentes e plafons decorativos.",
+      "price": 59.90,
+      "category": "lampada-fil"
+    },
+    {
+      "imagePath": "assets/lampadas-led/hal01.png",
+      "name": "Lâmpada Halógena Dicroica Luz Amarela 50W Ourolux 12V",
+      "description": "A lâmpada Halógena é uma evolução da lâmpada incandescente e tem como diferencial não distorcer as cores do ambiente.",
+      "price": 8.69,
+      "category": "lampada-hal"
+    },
+    {
+      "imagePath": "assets/lampadas-led/hal02.png",
+      "name": "Lâmpada Halógena Cápsula Luz Amarela 60W Ourolux 127V (110V)",
+      "description": "A lâmpada Halógena é uma evolução da lâmpada incandescente e tem como diferencial não distorcer as cores do ambiente.",
+      "price": 8.29,
+      "category": "lampada-hal"
+    },
+    {
+      "imagePath": "assets/lampadas-led/hal03.png",
+      "name": "Lâmpada Halógena Dicroica Luz Amarela 50W Ourolux 127V (110V)",
+      "description": "A lâmpada Halógena é uma evolução da lâmpada incandescente e tem como diferencial não distorcer as cores do ambiente. ",
+      "price": 11.69,
+      "category": "lampada-hal"
+    },
+    {
+      "imagePath": "assets/lampadas-led/hal04.png",
+      "name": "Lâmpada Halógena Bulbo Luz Amarela 100W Kian 127V (110V)",
+      "description": "A lâmpada Halógena é uma evolução da lâmpada incandescente e tem como diferencial não distorcer as cores do ambiente. ",
+      "price": 8.39,
+      "category": "lampada-hal"
     }
   ]
 }
