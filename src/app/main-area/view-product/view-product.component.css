@@ -11,6 +11,12 @@
     padding: 17px;
 }
 
+.icon-favorite{
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 7px;
+}
+
 .title{
     margin: 7px;
 }

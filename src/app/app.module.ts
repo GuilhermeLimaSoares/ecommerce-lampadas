@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { FirstNamePipe } from '../pipes/first-name.pipe';
 import { SmallDescPipe } from '../pipes/small-desc.pipe';
 import { AuthenticationService } from '../services/authentication.service';
+import { FavoritesService } from '../services/favorites.service';
 import { UserService } from '../services/user.service';
 import { ProductsService } from '../services/products.service';
 import { HeaderComponent } from './header/header.component';
@@ -28,6 +29,7 @@ import { CatalogComponent } from './main-area/catalog/catalog.component';
 import { FavoritesComponent } from './main-area/favorites/favorites.component';
 import { ButtonItensComponent } from './header/icon-buttons/button-itens/button-itens.component';
 import { ButtonShoppingComponent } from './header/icon-buttons/button-shopping/button-shopping.component';
+import { IconFavoriteComponent } from './main-area/favorites/icon-favorite/icon-favorite.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import { ButtonShoppingComponent } from './header/icon-buttons/button-shopping/b
     FavoritesComponent,
     ButtonItensComponent,
     ButtonShoppingComponent,
+    IconFavoriteComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,7 @@ import { ButtonShoppingComponent } from './header/icon-buttons/button-shopping/b
     HttpModule,
     // AppRoutingModule
   ],
-  providers: [AuthenticationService, ProductsService, UserService],
+  providers: [AuthenticationService, FavoritesService, ProductsService, UserService],
   bootstrap: [AppComponent],
   // exports: [FirstNamePipe],
 })

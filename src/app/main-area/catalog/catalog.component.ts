@@ -8,6 +8,7 @@ import { ProductsService } from '../../../services/products.service';
 })
 export class CatalogComponent implements OnInit {
   public availableProducts;
+  public isFavorite = true;
   constructor(private readonly productsService: ProductsService) { }
 
   ngOnInit() {

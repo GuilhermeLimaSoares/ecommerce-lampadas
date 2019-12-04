@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FavoritesService } from 'src/services/favorites.service';
 @Component({
   selector: 'app-view-product',
   templateUrl: './view-product.component.html',
@@ -6,14 +7,21 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ViewProductComponent implements OnInit {
   @Input() products;
+  @Input() isFavorite = false;
 
-  constructor() { }
+  constructor(private readonly favoriteService: FavoritesService) { }
 
   ngOnInit() {
     if (this.products !== undefined){
       console.log('podutos');
       console.log(this.products);
     }
+  }
+
+  public getFavorites(obj){
+    this.favoriteService.getFavorites(obj);
+    console.log('inserido');
+    console.log(obj);
   }
 
 }
