@@ -25,6 +25,9 @@ import { OrdersComponent } from './header/icon-buttons/button-user/my-account/or
 import { CardsComponent } from './header/icon-buttons/button-user/my-account/cards/cards.component';
 import { HomeComponent } from './main-area/home/home.component';
 import { CatalogComponent } from './main-area/catalog/catalog.component';
+import { FavoritesComponent } from './main-area/favorites/favorites.component';
+import { ButtonItensComponent } from './header/icon-buttons/button-itens/button-itens.component';
+import { ButtonShoppingComponent } from './header/icon-buttons/button-shopping/button-shopping.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { CatalogComponent } from './main-area/catalog/catalog.component';
     FirstNamePipe,
     SmallDescPipe,
     CatalogComponent,
+    FavoritesComponent,
+    ButtonItensComponent,
+    ButtonShoppingComponent,
   ],
   imports: [
     BrowserModule,
