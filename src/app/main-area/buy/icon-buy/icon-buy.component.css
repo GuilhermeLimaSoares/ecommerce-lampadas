@@ -1,0 +1,14 @@
+.icon-heart{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 35px;
+    padding: 4px;
+}
+
+
+img{
+    /* width:5%; */
+    width: 80%;
+    margin-left: 2px;
+}
