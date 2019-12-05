@@ -2,18 +2,18 @@
     <!-- <button>Meu Carrinho <img src="../../../assets/shopping-cart.svg" style="width:20%"></button> -->
   
     <div class="btn-group" *ngIf="authentication === undefined">
-      <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/carrinho">
         Meu Carrinho  
           <img src="../../../assets/shopping-cart.svg" style="width:20%">
       </button>
-      <app-button-shopping></app-button-shopping>
+      <!-- <app-button-shopping></app-button-shopping> -->
     </div>
     <div class="btn-group" *ngIf="authentication === undefined">
-      <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/favoritos">
         Lista de Desejos 
           <img src="../../../assets/heart.svg" style="width:20%">
       </button>
-      <app-button-itens></app-button-itens>
+      <!-- <app-button-itens [favorites]="favorites"></app-button-itens> -->
     </div>
     <div class="btn-group" *ngIf="authentication === undefined">
             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

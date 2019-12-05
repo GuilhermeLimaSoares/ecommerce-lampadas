@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingCartService } from 'src/services/shopping-cart.service';
 
 @Component({
   selector: 'app-button-shopping',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonShoppingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly shoppinService: ShoppingCartService) { }
 
   ngOnInit() {
+
   }
 
 }

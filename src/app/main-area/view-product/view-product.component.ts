@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FavoritesService } from 'src/services/favorites.service';
+import { ShoppingCartService } from 'src/services/shopping-cart.service';
 @Component({
   selector: 'app-view-product',
   templateUrl: './view-product.component.html',
@@ -9,7 +10,10 @@ export class ViewProductComponent implements OnInit {
   @Input() products;
   @Input() isFavorite = false;
 
-  constructor(private readonly favoriteService: FavoritesService) { }
+  constructor(
+    private readonly favoriteService: FavoritesService,
+    private readonly shoppinService: ShoppingCartService,
+    ) { }
 
   ngOnInit() {
     if (this.products !== undefined){
@@ -21,6 +25,12 @@ export class ViewProductComponent implements OnInit {
   public getFavorites(obj){
     this.favoriteService.getFavorites(obj);
     console.log('inserido');
+    console.log(obj);
+  }
+
+  public getShopping(obj){
+    this.shoppinService.getItems(obj);
+    console.log('inserido compra');
     console.log(obj);
   }
 

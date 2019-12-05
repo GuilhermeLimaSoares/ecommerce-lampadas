@@ -1,6 +1,7 @@
-<div *ngIf="products === undefined">
+<!-- <div *ngIf="products === undefined">
     <div class="area-product">
             <app-icon-favorite class="icon-favorite"></app-icon-favorite>
+            <app-icon-buy class="icon-buy"></app-icon-buy>
         <img src="../../../assets/zsl.jpg">
         <div class="title title-1">
             <span>
@@ -20,13 +21,14 @@
             </span>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class='carrousel' *ngIf="products">
     <ul>
         <li *ngFor="let obj of products">
             <div class="area-product">
                 <app-icon-favorite class="icon-favorite" (click)="getFavorites(obj)" *ngIf="isFavorite"></app-icon-favorite>
+                <app-icon-buy class="icon-buy" (click)="getShopping(obj)"></app-icon-buy>
                 <img src="{{obj?.imagePath}}">
                 <div class="title title-1">
                     <span>

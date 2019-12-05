@@ -12,8 +12,8 @@ export class FavoritesService {
   public getFavorites(obj): void {
     this.favoriteCollection = this.favoriteCollection.concat(obj);
 
-    if (this.favoriteCollection.length > 0) {
-      this.favorites.next(this.favoriteCollection);
-    }
+    // if (this.favoriteCollection.length > 0) {
+    this.favorites.next(this.favoriteCollection);
+    // }
   }
 }
