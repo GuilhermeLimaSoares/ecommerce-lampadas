@@ -12,6 +12,7 @@ import { MAIN_API } from './../app/app.api';
 })
 export class ProductsService {
   public products = new BehaviorSubject(undefined);
+  public searchProducts = new BehaviorSubject(undefined);
 
   constructor(private http: Http) { }
 
@@ -29,6 +30,9 @@ export class ProductsService {
 
   public showProducts(data){
     this.products.next(data);
+  }
+  public getSearchProducts(data){
+    this.searchProducts.next(data);
   }
 
 } 

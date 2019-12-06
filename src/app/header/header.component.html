@@ -16,8 +16,8 @@
     <img class="logo" src="./../../assets/zsl.jpg" routerLink="">
 
   <form class="form-inline my-2 my-lg-0 barra-pesquisa">
-    <input class="form-control mr-sm-2 barra" type="search" placeholder="Buscar" aria-label="Search">
-    <button class="btn btn-outline-primary button-search" type="submit">Pesquisar</button>
+    <input class="form-control mr-sm-2 barra" type="search" placeholder="Buscar" aria-label="Search" [(ngModel)]="search" [ngModelOptions]="{standalone: true}">
+    <button class="btn btn-outline-primary button-search" type="submit" (click)="searchProducts(search)" routerLink="/pesquisa">Pesquisar</button>
   </form>
   <app-icon-buttons></app-icon-buttons>
 

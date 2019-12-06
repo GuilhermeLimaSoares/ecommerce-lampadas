@@ -1,0 +1,5 @@
+<h6>Resultado da Pesquisa:</h6>
+
+<app-view-product [products]="searchProducts" [isFavorite]="isFavorite" *ngIf="searchProducts  !== undefined"></app-view-product>
+
+<h3 class="void" *ngIf="searchProducts === undefined">{{void}}</h3>

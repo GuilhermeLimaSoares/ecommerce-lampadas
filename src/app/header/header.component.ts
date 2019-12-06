@@ -7,6 +7,8 @@ import { ProductsService } from '../../services/products.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  public search;
+  public searchArray = [];
   public productsArray = [];
   public filterProducts = [];
   constructor(private readonly productsService: ProductsService) { }
@@ -36,6 +38,20 @@ export class HeaderComponent implements OnInit {
       console.log('todos o productos');
       console.log(result);
       this.productsArray = this.productsArray.concat(result);
+    });
+  }
+
+  public searchProducts(data){
+    this.searchArray = [];
+    this.productsArray.map((res) => {
+      if (res.name.search(data) !== -1) {
+        this.searchArray = this.searchArray.concat(res);
+        console.log('items pesquisados');
+        console.log(this.searchArray);
+        this.productsService.getSearchProducts(this.searchArray);
+      } else {
+        this.productsService.getSearchProducts('undefined');
+      }
     });
   }
 

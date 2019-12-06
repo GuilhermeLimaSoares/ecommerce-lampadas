@@ -35,6 +35,7 @@ import { IconFavoriteComponent } from './main-area/favorites/icon-favorite/icon-
 import { BuyComponent } from './main-area/buy/buy.component';
 import { IconBuyComponent } from './main-area/buy/icon-buy/icon-buy.component';
 import { ViewDetailComponent } from './main-area/view-detail/view-detail.component';
+import { ViewSearchComponent } from './main-area/view-search/view-search.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { ViewDetailComponent } from './main-area/view-detail/view-detail.compone
     BuyComponent,
     IconBuyComponent,
     ViewDetailComponent,
+    ViewSearchComponent,
   ],
   imports: [
     BrowserModule,
