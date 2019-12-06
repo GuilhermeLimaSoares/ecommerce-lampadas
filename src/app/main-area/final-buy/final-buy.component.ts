@@ -39,24 +39,10 @@ export class FinalBuyComponent implements OnInit {
     });
   }
 
-  // public calculate(){
-  //   this.final.subscribe((res) => {
-  //     this.totalPrice = this.totalPrice + res.price;
-  //     console.log('preço total');
-  //     console.log(this.totalPrice);
-  //   });
-  // }
-
   public calculate(){
-    // this.final.subscribe((res) => {
-    //   this.totalPrice = this.totalPrice + res.price;
-    //   console.log('preço total');
-    //   console.log(this.totalPrice);
-    // });
+
     this.pay.forEach((res) => {
-      this.totalPrice = this.totalPrice + parseInt(res.price);
-      console.log('preço total');
-      // console.log(this.totalPrice);
+      this.totalPrice = this.totalPrice + parseFloat(res.price);
       this.price.next(this.totalPrice);
 
       this.price.subscribe((res) => {
