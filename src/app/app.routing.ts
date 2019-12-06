@@ -27,7 +27,7 @@ const APP_ROUTES: Routes = [
   // {path: 'cartoes', component: CardsComponent},
   {path: 'minhaconta', component: MyAccountComponent},
   {path: 'pesquisa', component: ViewSearchComponent},
-  // {path: 'pedidos', component: OrdersComponent},
+  {path: 'pedidos', component: OrdersComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

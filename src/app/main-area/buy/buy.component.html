@@ -3,11 +3,11 @@
     <div class="view">
         <app-view-product [products]="itens" [isCancel]="isCancel" *ngIf="itens.length > 0"></app-view-product>
     </div>
-    <div class="button" *ngIf="itens.length > 0">
+    <!-- <div class="button" *ngIf="itens.length > 0"> -->
+    <div class="button">
             <div class="button-buy">
                 <button type="button" class="btn btn-success x" routerLink="/compra">COMPRAR</button>
-            </div>
-                        
+            </div>             
     </div>  
 </div>
 
