@@ -17,15 +17,6 @@ export class HeaderComponent implements OnInit {
     this.getProducts();
   }
 
-  // public getCategory(products, product){
-  //   this.productsService.getCategory(products, product).subscribe((result) => {
-  //     console.log('filtro cmomponente');
-  //     // console.log(result);
-  //     this.filterProducts = this.filterProducts.concat(result);
-  //     console.log(this.filterProducts);
-  //   });
-  // }
-
   public getCategory(product){
     this.filterProducts = this.productsArray.filter((result) => result.category === product);
     console.log('array filtrado');

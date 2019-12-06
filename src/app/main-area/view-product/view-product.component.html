@@ -51,7 +51,8 @@
         
                 <div class="title" *ngIf="obj !== undefined">
                     <span>
-                        10x de R$ 225,89 sem juros
+                        <!-- 10x de R$ 225,89 sem juros -->
+                        10x de R$ {{ (obj?.price / 10) | currency:'BRL':true:'1.2-2' }} sem juros
                     </span>
                 </div>
                 </div>

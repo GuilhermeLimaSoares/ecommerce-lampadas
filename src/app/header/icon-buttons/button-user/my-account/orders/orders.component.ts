@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingCartService } from 'src/services/shopping-cart.service';
 
 @Component({
   selector: 'app-orders',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./orders.component.css']
 })
 export class OrdersComponent implements OnInit {
-
-  constructor() { }
+  public products;
+  constructor(private readonly shoppingg: ShoppingCartService) { }
 
   ngOnInit() {
+    this.getProducts();
+  }
+
+  public getProducts() {
+    this.shoppingg.itens.subscribe((res) => {
+      this.products = res;
+    });
   }
 
 }
