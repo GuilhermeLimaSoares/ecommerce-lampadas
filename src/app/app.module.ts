@@ -36,6 +36,8 @@ import { BuyComponent } from './main-area/buy/buy.component';
 import { IconBuyComponent } from './main-area/buy/icon-buy/icon-buy.component';
 import { ViewDetailComponent } from './main-area/view-detail/view-detail.component';
 import { ViewSearchComponent } from './main-area/view-search/view-search.component';
+import { FinalBuyComponent } from './main-area/final-buy/final-buy.component';
+import { IconCancelComponent } from './main-area/final-buy/icon-cancel/icon-cancel.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +66,8 @@ import { ViewSearchComponent } from './main-area/view-search/view-search.compone
     IconBuyComponent,
     ViewDetailComponent,
     ViewSearchComponent,
+    FinalBuyComponent,
+    IconCancelComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { ShoppingCartService } from 'src/services/shopping-cart.service';
   styleUrls: ['./buy.component.css']
 })
 export class BuyComponent implements OnInit {
+  public isCancel = true;
   public itens = [];
   constructor(private readonly shoppinService: ShoppingCartService) { }
 

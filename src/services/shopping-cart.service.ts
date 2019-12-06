@@ -16,4 +16,9 @@ export class ShoppingCartService {
     this.itens.next(this.itemCollection);
     // }
   }
+
+  public deleteItems(index): void {
+    this.itemCollection.splice(index, index + 1 );
+    this.itens.next(this.itemCollection);
+  }
 }

@@ -10,6 +10,7 @@ import { ViewService } from 'src/services/view.service';
 export class ViewProductComponent implements OnInit {
   @Input() products;
   @Input() isFavorite = false;
+  @Input() isCancel = false;
 
   constructor(
     private readonly favoriteService: FavoritesService,
@@ -35,9 +36,17 @@ export class ViewProductComponent implements OnInit {
   }
 
   public getShopping(obj){
-    this.shoppinService.getItems(obj);
-    console.log('inserido compra');
-    console.log(obj);
+    if (obj !== true && obj !== false) {
+      this.shoppinService.getItems(obj);
+      console.log('inserido compra');
+      console.log(obj);
+    }
+  }
+
+  public deleteProduct(index){
+    // if (obj !== true && obj !== false) {
+      this.shoppinService.deleteItems(index);
+    // }
   }
 
 }

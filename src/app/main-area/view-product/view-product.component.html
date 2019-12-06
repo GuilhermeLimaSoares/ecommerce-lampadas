@@ -25,10 +25,12 @@
 
 <div class='carrousel' *ngIf="products">
     <ul>
-        <li *ngFor="let obj of products">
+        <li *ngFor="let obj of products; let i = index">
+            <div *ngIf="obj">
             <div class="buttons">
                     <app-icon-favorite class="icon-favorite over" (click)="getFavorites(obj)" *ngIf="isFavorite"></app-icon-favorite>
-                    <app-icon-buy class="icon-buy over" (click)="getShopping(obj)" *ngIf="isFavorite"></app-icon-buy>                
+                    <app-icon-buy class="icon-buy over" (click)="getShopping(obj)" *ngIf="isFavorite"></app-icon-buy>
+                    <app-icon-cancel class="icon-cancel over" (click)="deleteProduct(i)" *ngIf="isCancel"></app-icon-cancel>           
             </div>
                
             <div class="area-product" (click)="getView(obj)" routerLink="/detalhe">
@@ -47,13 +49,13 @@
                     </span>
                 </div>
         
-                <div class="title">
+                <div class="title" *ngIf="obj !== undefined">
                     <span>
                         10x de R$ 225,89 sem juros
                     </span>
                 </div>
                 </div>
-            <!-- </div> -->
+            </div>
         </li>
     </ul>
 </div> 

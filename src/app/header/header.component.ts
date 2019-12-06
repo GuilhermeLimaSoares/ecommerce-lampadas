@@ -50,6 +50,7 @@ export class HeaderComponent implements OnInit {
         console.log(this.searchArray);
         this.productsService.getSearchProducts(this.searchArray);
       } else {
+        // this.searchArray = [];
         this.productsService.getSearchProducts('undefined');
       }
     });
