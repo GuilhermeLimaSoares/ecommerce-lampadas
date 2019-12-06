@@ -1,4 +1,4 @@
-.icon-heart{
+/* .icon-heart{
     background-color: black;
     border: 1px solid black;
     border-radius: 50%;
@@ -8,7 +8,35 @@
 
 
 img{
-    /* width:5%; */
     width: 80%;
     margin-left: 2px;
+} */
+
+.all{
+    display: grid;
+}
+
+.view{
+    float: left;
+}
+.total{
+    margin-top: 15px;
+}
+
+.button{
+    float: right;
+    margin-top: 15px;
+}
+
+.x {
+    width: 260px;
+    height: 58px;
+}
+
+tr{
+    border:  1px solid black;
+}
+
+td{
+    border:  1px solid black;
 }

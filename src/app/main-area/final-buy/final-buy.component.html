@@ -1,4 +1,30 @@
-<div class="icon-heart" (click)="changeColor()">
+<!-- <div class="icon-heart" (click)="changeColor()">
     <img src="../../../../assets/shopping-cart2.svg" *ngIf="color === false">
     <img src="../../../../assets/shopping-cart3.svg" *ngIf="color === true">
+</div> -->
+<h1>Finalizar Pedido</h1>
+
+<!-- <table>
+    <tr *ngFor="let obj of products">
+        <td>{{ obj?.name }}</td><td>{{obj?.price | currency:'BRL':true:'1.2-2'}} </td>
+    </tr>
+</table> -->
+
+<div class="all">
+    <div class="view">
+        <table>
+            <tr *ngFor="let obj of products">
+                <td>{{ obj?.name }}</td><td>{{obj?.price | currency:'BRL':true:'1.2-2'}} </td>
+            </tr>
+        </table>
+    </div>
+    <div class="total">
+        <h3>Valor total: {{valor | currency:'BRL':true:'1.2-2' }}</h3>
+    </div>
+    <div class="button">
+            <div class="button-buy">
+                <button type="button" class="btn btn-success x">Finalizar</button>
+            </div>
+                        
+    </div>  
 </div>

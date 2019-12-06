@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BuyComponent } from '../app/main-area/buy/buy.component';
+import { FinalBuyComponent } from '../app/main-area/final-buy/final-buy.component';
 import { CatalogComponent } from '../app/main-area/catalog/catalog.component';
 import { ViewDetailComponent } from '../app/main-area/view-detail/view-detail.component';
 import { ViewSearchComponent } from '../app/main-area/view-search/view-search.component';
@@ -20,6 +21,7 @@ const APP_ROUTES: Routes = [
   {path: 'cadastro', component: SingUpComponent},
   {path: 'carrinho', component: BuyComponent},
   {path: 'catalogo', component: CatalogComponent},
+  {path: 'compra', component: FinalBuyComponent },
   {path: 'detalhe', component: ViewDetailComponent},
   {path: 'favoritos', component: FavoritesComponent},
   // {path: 'cartoes', component: CardsComponent},

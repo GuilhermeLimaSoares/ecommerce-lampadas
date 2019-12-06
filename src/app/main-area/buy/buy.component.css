@@ -1,0 +1,17 @@
+.all{
+    display: grid;
+}
+
+.view{
+    float: left;
+}
+
+.button{
+    float: right;
+    margin-left: 22px;
+}
+
+.x {
+    width: 260px;
+    height: 58px;
+}
