@@ -14,7 +14,7 @@
                 R$ 29,90
             </span>
         </div>
-
+ 
         <div class="title">
             <span>
                 10x de R$ 225,89 sem juros
@@ -26,9 +26,14 @@
 <div class='carrousel' *ngIf="products">
     <ul>
         <li *ngFor="let obj of products">
-            <div class="area-product">
-                <app-icon-favorite class="icon-favorite" (click)="getFavorites(obj)" *ngIf="isFavorite"></app-icon-favorite>
-                <app-icon-buy class="icon-buy" (click)="getShopping(obj)"></app-icon-buy>
+            <div class="buttons">
+                    <app-icon-favorite class="icon-favorite over" (click)="getFavorites(obj)" *ngIf="isFavorite"></app-icon-favorite>
+                    <app-icon-buy class="icon-buy over" (click)="getShopping(obj)" *ngIf="isFavorite"></app-icon-buy>                
+            </div>
+               
+            <div class="area-product" (click)="getView(obj)" routerLink="/detalhe">
+                <!-- <app-icon-favorite class="icon-favorite over" (click)="getFavorites(obj)" *ngIf="isFavorite"></app-icon-favorite>
+                <app-icon-buy class="icon-buy over" (click)="getShopping(obj)"></app-icon-buy> -->
                 <img src="{{obj?.imagePath}}">
                 <div class="title title-1">
                     <span>
@@ -38,7 +43,7 @@
         
                 <div class="title title-2">
                     <span>
-                        {{obj?.price}}
+                        {{obj?.price | currency:'BRL':true:'1.2-2' }}
                     </span>
                 </div>
         
@@ -47,8 +52,8 @@
                         10x de R$ 225,89 sem juros
                     </span>
                 </div>
-            </div>
+                </div>
+            <!-- </div> -->
         </li>
     </ul>
 </div> 
-        

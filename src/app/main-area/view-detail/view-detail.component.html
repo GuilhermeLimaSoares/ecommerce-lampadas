@@ -1,0 +1,19 @@
+<h1>Detalhe</h1>
+<div class= "all" *ngIf=detail>
+    <div class="image">
+        <img src="{{detail?.imagePath}}">
+    </div>
+    
+    <div class="details">
+        <ul>
+            <li><h4><br>{{detail?.name}}</h4></li>
+            <li>{{detail?.description}}</li>
+            <li><b>{{detail?.price | currency:'BRL':true:'1.2-2'}}</b></li>
+        </ul>
+    </div>
+
+    <div class="button-buy">
+            <button type="button" class="btn btn-success">COMPRAR</button>
+    </div>
+</div>
+

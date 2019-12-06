@@ -1,4 +1,6 @@
-<div class="icon-heart">
-    <img src="../../../../assets/shopping-cart2.svg">
+<div class="icon-heart" (click)="changeColor()">
+    <!-- <img src="../../../../assets/shopping-cart2.svg"> -->
+    <img src="../../../../assets/shopping-cart2.svg" *ngIf="color === false">
+    <img src="../../../../assets/shopping-cart3.svg" *ngIf="color === true">
 </div>
 

@@ -10,6 +10,7 @@ import { FirstNamePipe } from '../pipes/first-name.pipe';
 import { SmallDescPipe } from '../pipes/small-desc.pipe';
 import { AuthenticationService } from '../services/authentication.service';
 import { FavoritesService } from '../services/favorites.service';
+import { ViewService } from '../services/view.service';
 import { ShoppingCartService } from '../services/shopping-cart.service';
 import { UserService } from '../services/user.service';
 import { ProductsService } from '../services/products.service';
@@ -33,6 +34,7 @@ import { ButtonShoppingComponent } from './header/icon-buttons/button-shopping/b
 import { IconFavoriteComponent } from './main-area/favorites/icon-favorite/icon-favorite.component';
 import { BuyComponent } from './main-area/buy/buy.component';
 import { IconBuyComponent } from './main-area/buy/icon-buy/icon-buy.component';
+import { ViewDetailComponent } from './main-area/view-detail/view-detail.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,7 @@ import { IconBuyComponent } from './main-area/buy/icon-buy/icon-buy.component';
     IconFavoriteComponent,
     BuyComponent,
     IconBuyComponent,
+    ViewDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,7 +70,7 @@ import { IconBuyComponent } from './main-area/buy/icon-buy/icon-buy.component';
     HttpModule,
     // AppRoutingModule
   ],
-  providers: [AuthenticationService, FavoritesService, ProductsService, ShoppingCartService, UserService],
+  providers: [AuthenticationService, FavoritesService, ProductsService, ShoppingCartService, UserService, ViewService],
   bootstrap: [AppComponent],
   // exports: [FirstNamePipe],
 })

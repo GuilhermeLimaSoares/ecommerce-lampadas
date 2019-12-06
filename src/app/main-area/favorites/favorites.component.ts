@@ -8,6 +8,7 @@ import { FavoritesService } from 'src/services/favorites.service';
 })
 export class FavoritesComponent implements OnInit {
   public favorites = [];
+  public isFavorite = true;
   constructor(
     private readonly favoriteService: FavoritesService,
   ) { }

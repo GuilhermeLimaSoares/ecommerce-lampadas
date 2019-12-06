@@ -1,0 +1,40 @@
+.image{
+    border: 1px solid red;
+    width: 44%;
+    height: 456px;
+    float: left;
+}
+
+img{
+    width: 440px;
+}
+
+button{
+    width: 250px;
+    height: 51px;
+}
+
+li{
+    list-style-type: none;
+    max-width: 610px;
+}
+
+.all {
+    display: table;
+}
+
+.details{
+    width: 55%;
+    float: right;
+    position: relative;
+    bottom: 33px;
+    /* left: 500px;
+    position: relative;
+    display: table-cell; */
+}
+
+.button-buy{
+    float: right;
+    /* margin-right: 460px; */
+    margin-right: 324px;
+}
